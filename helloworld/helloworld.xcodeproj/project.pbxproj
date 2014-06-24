@@ -18,8 +18,11 @@
 		5BFEAD28195921C400D43DD4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BFEAD27195921C400D43DD4 /* Default-568h@2x.png */; };
 		5BFEAD2B195921C400D43DD4 /* HWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFEAD2A195921C400D43DD4 /* HWViewController.m */; };
 		5BFEAD2E195921C400D43DD4 /* HWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFEAD2C195921C400D43DD4 /* HWViewController.xib */; };
-		5BFEAD3F195952A000D43DD4 /* HWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFEAD3B195952A000D43DD4 /* HWViewController.xib */; };
 		5BFEAD40195952A000D43DD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BFEAD3D195952A000D43DD4 /* InfoPlist.strings */; };
+		5BFEAD44195955D200D43DD4 /* HWTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFEAD42195955D200D43DD4 /* HWTestViewController.m */; };
+		5BFEAD45195955D200D43DD4 /* HWTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFEAD43195955D200D43DD4 /* HWTestViewController.xib */; };
+		5BFEAD4B195965FE00D43DD4 /* HWNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFEAD49195965FE00D43DD4 /* HWNaviController.m */; };
+		5BFEAD4C195965FE00D43DD4 /* HWNaviController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BFEAD4A195965FE00D43DD4 /* HWNaviController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +42,13 @@
 		5BFEAD29195921C400D43DD4 /* HWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWViewController.h; sourceTree = "<group>"; };
 		5BFEAD2A195921C400D43DD4 /* HWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWViewController.m; sourceTree = "<group>"; };
 		5BFEAD2D195921C400D43DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HWViewController.xib; sourceTree = "<group>"; };
-		5BFEAD3C195952A000D43DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HWViewController.xib; sourceTree = "<group>"; };
 		5BFEAD3E195952A000D43DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		5BFEAD41195955D200D43DD4 /* HWTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTestViewController.h; sourceTree = "<group>"; };
+		5BFEAD42195955D200D43DD4 /* HWTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTestViewController.m; sourceTree = "<group>"; };
+		5BFEAD43195955D200D43DD4 /* HWTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWTestViewController.xib; sourceTree = "<group>"; };
+		5BFEAD48195965FE00D43DD4 /* HWNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNaviController.h; sourceTree = "<group>"; };
+		5BFEAD49195965FE00D43DD4 /* HWNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNaviController.m; sourceTree = "<group>"; };
+		5BFEAD4A195965FE00D43DD4 /* HWNaviController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HWNaviController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,8 @@
 				5BFEAD29195921C400D43DD4 /* HWViewController.h */,
 				5BFEAD2A195921C400D43DD4 /* HWViewController.m */,
 				5BFEAD2C195921C400D43DD4 /* HWViewController.xib */,
+				5BFEAD47195965CB00D43DD4 /* NaviController */,
+				5BFEAD46195962E800D43DD4 /* NewUI */,
 				5BFEAD18195921C400D43DD4 /* Supporting Files */,
 			);
 			path = helloworld;
@@ -115,10 +125,29 @@
 		5BFEAD3A195952A000D43DD4 /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				5BFEAD3B195952A000D43DD4 /* HWViewController.xib */,
 				5BFEAD3D195952A000D43DD4 /* InfoPlist.strings */,
 			);
 			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		5BFEAD46195962E800D43DD4 /* NewUI */ = {
+			isa = PBXGroup;
+			children = (
+				5BFEAD41195955D200D43DD4 /* HWTestViewController.h */,
+				5BFEAD42195955D200D43DD4 /* HWTestViewController.m */,
+				5BFEAD43195955D200D43DD4 /* HWTestViewController.xib */,
+			);
+			name = NewUI;
+			sourceTree = "<group>";
+		};
+		5BFEAD47195965CB00D43DD4 /* NaviController */ = {
+			isa = PBXGroup;
+			children = (
+				5BFEAD48195965FE00D43DD4 /* HWNaviController.h */,
+				5BFEAD49195965FE00D43DD4 /* HWNaviController.m */,
+				5BFEAD4A195965FE00D43DD4 /* HWNaviController.xib */,
+			);
+			name = NaviController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +207,9 @@
 				5BFEAD26195921C400D43DD4 /* Default@2x.png in Resources */,
 				5BFEAD28195921C400D43DD4 /* Default-568h@2x.png in Resources */,
 				5BFEAD2E195921C400D43DD4 /* HWViewController.xib in Resources */,
-				5BFEAD3F195952A000D43DD4 /* HWViewController.xib in Resources */,
 				5BFEAD40195952A000D43DD4 /* InfoPlist.strings in Resources */,
+				5BFEAD45195955D200D43DD4 /* HWTestViewController.xib in Resources */,
+				5BFEAD4C195965FE00D43DD4 /* HWNaviController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +223,8 @@
 				5BFEAD1E195921C400D43DD4 /* main.m in Sources */,
 				5BFEAD22195921C400D43DD4 /* HWAppDelegate.m in Sources */,
 				5BFEAD2B195921C400D43DD4 /* HWViewController.m in Sources */,
+				5BFEAD44195955D200D43DD4 /* HWTestViewController.m in Sources */,
+				5BFEAD4B195965FE00D43DD4 /* HWNaviController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,14 +243,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				5BFEAD2D195921C400D43DD4 /* en */,
-			);
-			name = HWViewController.xib;
-			sourceTree = "<group>";
-		};
-		5BFEAD3B195952A000D43DD4 /* HWViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BFEAD3C195952A000D43DD4 /* en */,
 			);
 			name = HWViewController.xib;
 			sourceTree = "<group>";
@@ -287,6 +311,7 @@
 		5BFEAD32195921C400D43DD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloworld/helloworld-Prefix.pch";
 				INFOPLIST_FILE = "helloworld/helloworld-Info.plist";
@@ -298,6 +323,7 @@
 		5BFEAD33195921C400D43DD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloworld/helloworld-Prefix.pch";
 				INFOPLIST_FILE = "helloworld/helloworld-Info.plist";

@@ -7,6 +7,7 @@
 //
 
 #import "HWViewController.h"
+#import "HWTestViewController.h"
 
 @interface HWViewController ()
 
@@ -52,6 +53,16 @@
     NSMutableData *writer = [[NSMutableData alloc] init];   //创建缓冲区
     [writer appendData:[@"要写入的数据CHB" dataUsingEncoding:NSUTF8StringEncoding]]; //将数据写入缓冲区
     [writer writeToFile:tempFile atomically:YES];   //将缓冲数据写入文件
-    //    [writer release];
+    [writer release];
+}
+
+- (IBAction)showNewUI:(id)sender {
+    HWTestViewController *testViewController = [[HWTestViewController alloc] initWithNibName:nil bundle:[NSBundle mainBundle]];
+    [self presentViewController:testViewController animated:YES completion:nil];
+    [testViewController release];
+//    HWNaviController *naviController = [[HWNaviController alloc] initWithNibName:nil bundle:[NSBundle mainBundle]];
+//    [self presentViewController:naviController animated:YES completion:nil];
+//    [self.view setFrame:CGRectMake(0,0,320,480)];
+//    [naviController release];
 }
 @end

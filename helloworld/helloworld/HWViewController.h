@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HWNaviController.h"
 
 @interface HWViewController : UIViewController {
     
@@ -16,5 +17,6 @@
 
 - (IBAction)readFile:(id)sender;
 - (IBAction)writeFile:(id)sender;
+- (IBAction)showNewUI:(id)sender;
 
 @end
