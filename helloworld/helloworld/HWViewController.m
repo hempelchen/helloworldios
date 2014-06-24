@@ -45,7 +45,8 @@
 
 - (IBAction)writeFile:(id)sender {
     NSFileManager *fileManager = [NSFileManager defaultManager]; //创建文件管理器
-    NSString *tempPath = nil;    //获得临时文件夹路径
+//    NSString *tempPath = nil;    //获得临时文件夹路径
+    NSString *tempPath = @"/Users/renen-inc_hempel/share/tmp/";
     NSString *tempFile = [tempPath stringByAppendingPathComponent:@"tempFile.txt"]; //获得文件全路径
     if (![fileManager fileExistsAtPath:tempFile]) {
         [fileManager createFileAtPath:tempFile contents:nil attributes:nil];  //如果文件不存在就创建一个
